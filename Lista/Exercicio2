@@ -1,0 +1,16 @@
+entrada = input("Digite uma lista de números separados por espaço: ").split()
+
+if entrada:
+
+    maior = menor = entrada[0]
+
+    for num in entrada:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+
+    print(f"Maior número: {maior}")
+    print(f"Menor número: {menor}")
+else:
+    print("Nenhum número foi inserido.")
