@@ -1,0 +1,12 @@
+entrada = input("Digite uma lista de números separados por espaço: ").split()
+
+
+numeros_unicos = []
+
+for num in entrada:
+    
+    if num not in numeros_unicos:
+        numeros_unicos.append(num)
+
+
+print(f"Lista sem duplicatas: {numeros_unicos}")
