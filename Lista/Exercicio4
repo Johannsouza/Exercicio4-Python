@@ -1,0 +1,4 @@
+entrada = input("Digite uma lista de palavras separadas por espaço: ").split()
+
+entrada.reverse()  
+print("Lista na ordem inversa:", entrada)
