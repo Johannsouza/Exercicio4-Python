@@ -1,0 +1,15 @@
+entrada = input("Digite uma lista de números separados por espaço: ").split()
+
+numeros = []
+for num in entrada:
+    numeros.append(int(num))
+
+numero_especifico = int(input("Digite o número que deseja contar: "))
+
+contagem = 0
+
+for num in numeros:
+    if num == numero_especifico:
+        contagem += 1
+
+print(f"O número {numero_especifico} aparece {contagem} vezes na lista.")
